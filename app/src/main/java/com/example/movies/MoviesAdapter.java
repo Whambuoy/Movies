@@ -25,6 +25,10 @@ public class MoviesAdapter extends RecyclerView.Adapter<MoviesAdapter.MyViewHold
         }
     }
 
+    public MoviesAdapter(List<Movie> moviesList) {
+        this.moviesList = moviesList;
+    }
+
     @NonNull
     @Override
     public MoviesAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
